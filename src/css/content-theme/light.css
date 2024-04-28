@@ -24,6 +24,15 @@
  * SOFTWARE.
  *
  */
+
+.vditor-reset ul > li {
+    list-style: circle !important;
+}
+
+.vditor-reset ol > li {
+    list-style: decimal !important;
+}
+
 .vditor-reset h1, .vditor-reset h2 {
     padding-bottom: 0.3em;
     border-bottom: 1px solid #eaecef;
