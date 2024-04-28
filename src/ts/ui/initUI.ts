@@ -34,8 +34,6 @@ export const initUI = (vditor: IVditor) => {
     vditor.element.style.width = vditor.options.width;
   }
 
-  vditor.element.appendChild(vditor.toolbar.element);
-
   const contentElement = document.createElement("div");
   contentElement.className = "vditor-content";
 
@@ -72,6 +70,7 @@ export const initUI = (vditor: IVditor) => {
 
   contentElement.appendChild(vditor.tip.element);
 
+  vditor.element.appendChild(vditor.toolbar.element);
   vditor.element.appendChild(contentElement);
 
   contentElement.addEventListener("click", () => {
